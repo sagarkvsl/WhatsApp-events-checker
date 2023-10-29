@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WhatsApp Events Checker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #333; /* Dark background color */
+            color: #eee; /* Light text color */
+        }
+        h1 {
+            background-color: #40a347;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        form {
+            background-color: #444; /* Dark form background color */
+            padding: 20px;
+            border: 1px solid #555; /* Slightly lighter border color */
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Slightly stronger box shadow */
+            margin: 0 auto;
+            width: 50%;
+            text-align: center;
+        }
+        label {
+            display: block;
+            color: #00FF00; /* Green label color */
+            margin-top: 10px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #555; /* Slightly lighter border color */
+            border-radius: 5px;
+            background-color: #555; /* Slightly darker background color */
+            color: #eee; /* Light text color */
+        }
+        input[type="submit"] {
+            background-color: #40a347;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>WhatsApp Events Checker</h1>
+    <form action="/get_api_response" method="POST">
+        <label for="api_key">Client's API Key:</label>
+        <input type="text" name="api_key" id="api_key" required>
+        <label for="limit">Limit:</label>
+        <input type="text" name="limit" id="limit" required>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
